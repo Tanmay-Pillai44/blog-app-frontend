@@ -16,12 +16,14 @@
     border-radius: 10px;
     position: relative;
     height: 450px;
+    box-shadow: 0px 5px 10px #0000000D;
 }
 
 .classStyle2 {
     border-radius: 10px;
     position: relative;
     background-size: cover;
+    box-shadow: 0px 5px 10px #0000000D;
 }
 
 .classStyle1 a, .classStyle2 a {

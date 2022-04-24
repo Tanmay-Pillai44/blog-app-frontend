@@ -27,7 +27,7 @@
 .LatestComponent img {
     width: 100%;
     border-radius: 8px 8px 0px 0px;
-    /* margin-bottom: 10px; */
+    box-shadow: 0px 5px 10px #0000000D;
 }
 
 .LatestComponent a {
@@ -45,6 +45,7 @@
     color: #908D8D;
     font-size: 17px;
     margin: 0px 20px 20px 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .latest-post-type {
@@ -52,6 +53,7 @@
     font-size: 17px;
     font-weight: 600;
     margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .latest-post-date {
@@ -59,4 +61,6 @@
     font-size: 17px;
     letter-spacing: 0.85px;
     opacity: 0.48;
+    font-family: 'Montserrat', sans-serif;
 }
+
