@@ -1,0 +1,13 @@
+.LatestArticles {
+    margin-top: 0px;
+}
+
+.LatestArticlesComponent:first-child {
+    border-top: none;
+    margin-top: 90px;
+}
+
+.latest-articles-heading {
+    position: relative;
+    top: 100px;
+}

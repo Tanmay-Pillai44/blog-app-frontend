@@ -9,7 +9,9 @@ const BlogData = [
         description: "Last week, Musk announced an offer to buy the social media company for $54.20 per share, or about $43 billion.",
         category: "Technology",
         date: "April 21, 2022",
-        readTime: "1 min read"
+        readTime: "1 min read",
+        // tags:,
+        // data:
     },
     {
         id: 1,
