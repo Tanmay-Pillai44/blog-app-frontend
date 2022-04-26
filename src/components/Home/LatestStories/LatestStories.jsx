@@ -5,7 +5,7 @@ import './LatestStories.css';
 
 const LatestStories = () => {
 
-    const [postNumber, setPostNumber] =useState(10)
+    const [postNumber, setPostNumber] =useState(19)
 
     return (
         <div className='LatestStories'>
@@ -13,7 +13,7 @@ const LatestStories = () => {
                 <div className='latest-stories-heading'>Latest Stories</div>
                 <div className='latest-stories-flex'>
                     {
-                        BlogData.slice(7, postNumber).map((data, index) => (
+                        BlogData.slice(16, postNumber).map((data, index) => (
                             <LatestStoriesComponent data={data} key={index}/>
                         ))
                     }

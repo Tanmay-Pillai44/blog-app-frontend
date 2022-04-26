@@ -5,7 +5,7 @@ const LatestStoriesComponent = ({ data }) => {
     return (
         <div className='LatestStoriesComponent' key={data.id} >
             <Link to={`/${data.category}/${data.id}`}>
-                <div className='latest-stories-title'>{data.title}</div>
+                <div className='latest-stories-title'>{data.title.substring(0, 45) + "..."}</div>
             </Link>
             <p>{data.description}</p>
             <div className='latest-stories-details'>

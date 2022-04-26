@@ -8,7 +8,7 @@ const TopPostComponent = ({data}) => {
             <div className='top-post-comp-box'>
                 <Link to={`/${data.category}/${data.id}`}>
                     <div className='top-post-comp-title'>
-                        {data.title.substring(0, 42)}
+                        {data.title.substring(0, 42)+"..."}
                     </div>
                 </Link>
                 <div className='top-post-comp-details'>

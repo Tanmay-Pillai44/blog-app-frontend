@@ -8,7 +8,7 @@ import TopPostComponent from './TopPostComponent';
 
 const LatestArticles = () => {
 
-    const [postNumber, setPostNumber] = useState(7);
+    const [postNumber, setPostNumber] = useState(10);
 
     return (
         <div className='LatestArticles'>
@@ -16,7 +16,7 @@ const LatestArticles = () => {
             <div className='latest-articles-box'>
                 <div className='latest-articles-left'>
                     {
-                        BlogData.slice(3, postNumber).map((data, index) => (
+                        BlogData.slice(6, postNumber).map((data, index) => (
                             <LatestArticlesComponent data={data} key={index} />
                         ))
                     }
@@ -29,16 +29,16 @@ const LatestArticles = () => {
                     <div className='advertisement-box'>Advertisement</div>
                     <div className='top-post-heading'>Top Posts</div>
                     <div className='top-post-flexbox'>
-                        <img src={BlogData[16].img} alt="top-post" />
-                        <Link to={`/${BlogData[16].category}/${BlogData[16].id}`}>
-                            <div className='top-post-title'>{BlogData[16].title}</div>
+                        <Link to={`/${BlogData[23].category}/${BlogData[23].id}`}>
+                            <img src={BlogData[23].img} alt="top-post" />
+                            <div className='top-post-title'>{BlogData[23].title}</div>
                         </Link>
                         <div className='top-post-details'>
-                            <span className='top-post-type'>{BlogData[16].category} </span>
-                            <span className='top-post-date'>/ {BlogData[16].date}</span>
+                            <span className='top-post-type'>{BlogData[23].category} </span>
+                            <span className='top-post-date'>/ {BlogData[23].date}</span>
                         </div>
                         {
-                            BlogData.slice(4, 7).map((data, index) => (
+                            BlogData.slice(11, 14).map((data, index) => (
                                 <TopPostComponent data={data} key={index}/>
                             ))
                         }

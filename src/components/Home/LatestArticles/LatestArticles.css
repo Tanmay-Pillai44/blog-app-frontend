@@ -81,7 +81,7 @@
 .load-more {
     cursor: pointer;
     font-size: 20px;
-    margin: 48px 0 140px;
+    margin: 48px 0;
     color: #A2A2A2;
     font-family: 'Montserrat', sans-serif;
     width: fit-content;
