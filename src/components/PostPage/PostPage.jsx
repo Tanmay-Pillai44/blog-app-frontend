@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import BlogData from '../BlogData';
-import AuthorAvatar from './../../images/avatar.png';
-import Stack from '@mui/material/Stack';
-import Avatar from '@mui/material/Avatar';
+import AuthorDetailsComponent from './AuthorDetailsComponent';
+import RelatedReadComponent from './RelatedReadComponent';
+import './PostPage.css';
 
 const PostPage = () => {
 
@@ -25,28 +25,38 @@ const PostPage = () => {
                             <div className='post-page-title'>
                                 {blog.title}
                                 <div className='author-flexbox'>
-                                    <div className='author-details-flexbox'>
-                                        <div className='author-avatar'>
-                                            <Stack direction="row" spacing={2}>
-                                                <Avatar src={AuthorAvatar}></Avatar>
-                                            </Stack>
-                                        </div>
-                                        <div className='author-details'>
-                                            <Link to={`/${blog.category}/${blog.id}/${blog.author}`}>
-                                                <div className='author-name'>{blog.author}</div>
-                                            </Link>
-                                            <div className='author-date'>
-                                                {blog.date} . {blog.readTime}
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <AuthorDetailsComponent data={blog} classStyle='written-by-hide' />
                                     <div className='social-btns'>
                                         <a href="https://twitter.com/i/flow/login" target="blank"><i className="fab fa-twitter-square"></i></a>
                                         <a href="https://www.facebook.com/login.php/" target="blank"><i className="fab fa-facebook-square"></i></a>
-                                        <a href="https://www.instagram.com/accounts/login/" target="blank"><i class="fa fa-instagram"></i></a>
+                                        <a href="https://www.instagram.com/accounts/login/" target="blank"><i className="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
-
+                                <img src={blog.img} className="post-page-img" alt="blog-img" />
+                                <div className='post-page-para' dangerouslySetInnerHTML={{__html: blog['para'] }}></div>
+                                <div className='post-page-tags-box'>
+                                    {
+                                        blog.tags.map((item, index) => (
+                                            <span key={index}>{item}</span>
+                                        ))
+                                    }
+                                </div>
+                                {/* add likes later */}
+                                <div className='written-by-box'>
+                                    <AuthorDetailsComponent data={blog} classStyle='written-by' />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='related-read-box'>
+                            <div className='related-read-innerbox'>
+                                <div className='more-from-siren'>More From The Siren</div>
+                                <div className='related-read-flexbox'>
+                                    {
+                                        BlogData.filter((item) => item.author === blog.author).slice(1, 4).map((data, index) => (
+                                            <RelatedReadComponent data={data} key={index}/>
+                                        ))
+                                    }
+                                </div>
                             </div>
                         </div>
                     </div> : null
