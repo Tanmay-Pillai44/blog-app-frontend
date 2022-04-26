@@ -1,22 +1,20 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import AuthorDetailsComponent from './AuthorDetailsComponent';
 
 const RelatedReadComponent = ({ data }) => {
 
-    const navigate =useNavigate();
-
-    const clickHandler = () => {
-        navigate(-1);
+    const handleClick = () => {
+        window.scrollTo(0, 0);
     }
 
     return (
         <div className='RelatedReadComponent' key={data.id}>
             <div className='related-reads-text'>Related reads</div>
             <img src={data.img} alt="related-read-img" className='related-read-img' />
-            <Link onClick={clickHandler} to={`${data.category}/${data.id}`}>
+            <Link onClick={handleClick} to={`/${data.category}/${data.id}`}>
                 <div className='related-read-title'>
-                    {data.title}
+                    {data.title.substring(0, 60)+"..."}
                 </div>
             </Link>
             <AuthorDetailsComponent data={data} classStyle='written-by-hide' />
