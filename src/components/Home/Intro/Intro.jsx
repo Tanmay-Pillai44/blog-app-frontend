@@ -8,16 +8,18 @@ const Intro = () => {
 
     return (
         <div className='Intro'>
-            {
-                BlogData.filter((item) => item.id === 0).map((data, index) => (
-                    <IntroComponent data={data} classStyle='classStyle1' key={index} />
-                ))
-            }
-            {
-                BlogData.slice(1, 3).map((data, index) => (
-                    <IntroComponent data={data} classStyle='classStyle2' key={index} />
-                ))
-            }
+            <div className='intro-box'>
+                {
+                    BlogData.filter((item) => item.id === 0).map((data, index) => (
+                        <IntroComponent data={data} classStyle='classStyle1' key={index} />
+                    ))
+                }
+                {
+                    BlogData.slice(1, 3).map((data, index) => (
+                        <IntroComponent data={data} classStyle='classStyle2' key={index} />
+                    ))
+                }
+            </div>
         </div>
     )
 }

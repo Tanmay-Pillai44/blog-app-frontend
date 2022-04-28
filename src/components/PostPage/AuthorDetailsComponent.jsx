@@ -3,9 +3,9 @@ import AuthorAvatar from './../../images/avatar.png';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 
-const AuthorDetailsComponent = ({data, classStyle}) => {
+const AuthorDetailsComponent = ({data, classStyle, hidecomp}) => {
     return (
-        <div className='AuthorDetailsComponent' key={data.id}>
+        <div className={`AuthorDetailsComponent ${hidecomp}`} key={data.id}>
             <div className='author-avatar'>
                 <Stack direction="row" spacing={2}>
                     <Avatar src={AuthorAvatar} sx={{ width: 100, height: 100, fontSize: 65 }}></Avatar>

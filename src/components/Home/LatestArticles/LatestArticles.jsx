@@ -21,7 +21,7 @@ const LatestArticles = () => {
                         ))
                     }
                     <div className='load-more' onClick={() => setPostNumber(postNumber + 2)}>
-                        <i>&#x2193; </i>  LOAD MORE
+                        <i className="fas fa-arrow-down"></i>  LOAD MORE
                     </div>
                     <CarouselComponent />
                 </div>

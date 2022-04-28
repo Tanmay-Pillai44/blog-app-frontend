@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:display=swap');
-
 .title {
     display: flex;
     justify-content: center;
@@ -19,31 +17,104 @@
     margin-top: 50px;
 }
 
-.navbar {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 18px;
-    width: 80%;
-    margin: 20px auto;
-    font-family: 'Montserrat', sans-serif;
+.bar, .times {
+    display: none;
 }
 
-.link {
-    text-decoration: none;
-    color: black;
-}
 
-.link-active, .link:hover, .link-active:hover {
-    text-decoration: none;
-    color: darkcyan;
-    padding-bottom: 5px;
-    border-bottom: 3px solid darkcyan;
-}
+@media screen and (max-width: 768px) {
 
-.header-hr {
-    height: 3px;
-    background-color: #f0f0f0;
-    width: 80%;
-    margin: 0 auto;
+    .header-box {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 3px 6px #0000001A;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: white;
+    }
+
+    .title {
+        height: 70px;
+        margin-left: 5%;
+    }
+
+    .the {
+        font-size: 17px;
+        height: 25px;
+        margin-top: 21px;
+    }
+
+    .siren {
+        font-size: 32px;
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .bar {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        right: 5%;
+        font-size: 1.1rem;
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    .times {
+        display: inline-block;
+        position: absolute;
+        top: 14px;
+        right: 6%;
+        font-size: 1.3rem;
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    .hide-icon {
+        opacity: 0;
+    }
+
+
+    /* .bar1 {
+        display: none;
+    }
+
+    .navlist {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        z-index: 1;
+        border-bottom: 3px solid #f0f0f0;
+        box-shadow: 0px 3px 6px #0000001A;
+    }
+
+    .hidenavlist {
+        display: none;
+    }
+
+    .navlist a {
+        width: 80%;
+        margin: 15px auto 0;
+        padding-bottom: 15px;
+        border-bottom: 3px solid #f0f0f0;
+    }
+
+    .navlist a:last-child {
+        border-bottom: none;
+    }
+
+    .link-active, .link:hover, .link-active:hover {
+        text-decoration: none;
+        color: darkcyan;
+        border-bottom: 3px solid #f0f0f0;
+    } */
 }

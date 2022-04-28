@@ -35,6 +35,7 @@
     width: 100%;
     box-shadow: 0px 5px 10px #0000000D;
     border-radius: 4px;
+    height: fit-content;
 }
 
 .LatestArticlesComponent a {
@@ -81,7 +82,7 @@
 .load-more {
     cursor: pointer;
     font-size: 20px;
-    margin: 48px 0;
+    margin: 48px 0 160px;
     color: #A2A2A2;
     font-family: 'Montserrat', sans-serif;
     width: fit-content;
@@ -89,14 +90,14 @@
 
 .load-more i {
     color: #F08080;
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .advertisement-box {
     width: 380px;
     height: 800px;
     border: 1px solid #707070;
-    display: flex !important;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
@@ -207,6 +208,99 @@
 .carousel-item img {
     border-radius: 4px;
     box-shadow: 0px 5px 10px #0000000D;
+    width: 100%;
+    height: fit-content;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .latest-articles-box {
+        display: block;
+    }
+
+    .advertisement-box {
+        display: none;
+    }
+
+    .LatestArticlesComponent {
+        padding-top: 48px;
+        display: flex;
+        max-width: 100%;
+        border-top: 3px solid #F0F0F0;
+    }
+
+    .LatestArticlesComponent img {
+        max-width: 40%;
+        box-shadow: 0px 5px 10px #0000000D;
+        border-radius: 4px;
+        height: fit-content;
+    }
+
+    .latest-article-title {
+        font-size: 18px;
+    }
+
+    .LatestArticlesComponent p {
+        font-size: 14px;
+    }
+
+    .latest-article-type, .latest-article-date {
+        font-size: 14px;
+    }
+
+    .load-more {
+        margin: 48px 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .latest-article-title {
+        font-size: 13px;
+    }
+
+    .LatestArticlesComponent p {
+        font-size: 9px;
+    }
+
+    .latest-article-type, .latest-article-date  {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .latest-article-title {
+        font-size: 10px;
+    }
+
+    .LatestArticlesComponent p {
+        font-size: 7px;
+    }
+
+    .latest-article-type, .latest-article-date  {
+        font-size: 7px;
+    }
+
+    .latest-articles-heading, .top-post-heading {
+        font-size: 28px;
+    }
+
+    .carousel-caption a h3 {
+        font-size: 17px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+    }
+
+    .top-post-title, .top-post-comp-title {
+        font-size: 17px;
+    }
+
+    .top-post-details, .top-post-comp-details {
+        font-size: 12px;
+    }
 }
 
 

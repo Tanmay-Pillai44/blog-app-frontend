@@ -20,7 +20,7 @@ const LatestStories = () => {
                 </div>
             </div>
             <div className='view-more'onClick={() => setPostNumber(postNumber + 3)}>
-                VIEW MORE <i> &#x2192;</i>
+                VIEW MORE <i className="fas fa-arrow-right"></i>
             </div>
         </div>
     );

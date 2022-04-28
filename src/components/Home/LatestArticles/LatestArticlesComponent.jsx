@@ -9,10 +9,10 @@ const LatestArticlesComponent = ({ data }) => {
                 <div>
                     <Link to={`/${data.category}/${data.id}`}>
                         <div className='latest-article-title'>
-                            {data.title}
+                            {data.title.substring(0, 60)+ "..."}
                         </div>
                     </Link>
-                    <p>{data.description.substring(0, 150)}</p>
+                    <p>{data.description.substring(0, 100)+"..."}</p>
                 </div>
                 <div>
                     <span className='latest-article-type'>{data.category} </span>

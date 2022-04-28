@@ -11,3 +11,13 @@
     position: relative;
     top: 100px;
 }
+
+@media screen and (max-width: 1280px) {
+    .LatestArticlesComponent:first-child {
+        margin-top: 40px;
+    }
+
+    .latest-articles-heading {
+        top: 40px;
+    }
+}

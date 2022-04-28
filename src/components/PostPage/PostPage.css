@@ -84,12 +84,17 @@
     opacity: 0.6;
 }
 
+.post-page-tags-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .post-page-tags-box span {
     background-color: #f2f2f2;
     color: #A2A2A2;
     font-size: 16px;
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 5px;
     border-radius: 4px;
 }
 
@@ -141,4 +146,126 @@
     color: #404040;
     font-size: 22px;
 }
+
+.show-author-name {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .post-page-title {
+        font-size: 24px;
+    }
+
+    .author-flexbox {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .related-read-flexbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .related-reads-text {
+        display: none;
+    }
+
+    .related-read-img {
+        width: 30%;
+        height: fit-content;
+    }
+
+    .related-read-title {
+        font-weight: 600;
+        margin-top: 25px;
+        margin-right: 20px;
+    }
+
+    .RelatedReadComponent {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .hide-author-comp {
+        display: none;
+    }
+
+    .show-author-name {
+        display: block;
+        margin-top: 10px;
+        color: #A2A2A2;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .related-read-title {
+        font-size: 18px;
+    }
+
+    .post-page-box {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .related-read-title {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .related-read-title {
+        font-size: 12px;
+    }
+
+    .post-page-title {
+        font-size: 21px;
+    }
+
+    .post-page-tags-box span {
+        font-size: 12px;
+    }
+
+    .post-page-para {
+        font-size: 17px;
+    }
+
+    .post-page-para::first-letter {
+        font-size: 32px;
+    }
+
+    .author-name {
+        font-size: 17px;
+    }
+
+    .author-date, .written-by {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .AuthorDetailsComponent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .author-avatar {
+        margin: 10px auto;
+    }
+
+    .author-details {
+        text-align: center;
+    }
+}
+
+
 

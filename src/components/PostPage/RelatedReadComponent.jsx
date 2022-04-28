@@ -15,9 +15,10 @@ const RelatedReadComponent = ({ data }) => {
             <Link onClick={handleClick} to={`/${data.category}/${data.id}`}>
                 <div className='related-read-title'>
                     {data.title.substring(0, 60)+"..."}
+                    <p className='show-author-name'>{data.author}</p>
                 </div>
             </Link>
-            <AuthorDetailsComponent data={data} classStyle='written-by-hide' />
+            <AuthorDetailsComponent data={data} classStyle='written-by-hide' hidecomp='hide-author-comp' />
         </div>
     );
 }

@@ -67,3 +67,36 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+@media screen and (max-width: 900px) {
+
+    .latest-flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 32px;
+    }
+
+    .LatestComponent {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .LatestComponent:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .latest-heading {
+        font-size: 28px;
+    }
+
+    .latest-post-title {
+        font-size: 18px;
+    }
+
+    .LatestComponent p, .latest-post-type, .latest-post-date {
+        font-size: 12px;
+    }
+}

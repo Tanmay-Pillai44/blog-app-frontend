@@ -16,3 +16,9 @@ footer {
     color: white;
     padding: 24px;
 }
+
+@media screen and (max-width: 576px) {
+    footer {
+        font-size: 12px;
+    }
+}

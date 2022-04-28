@@ -74,5 +74,36 @@
 
 .view-more i {
     color: #F08080;
-    font-size: 26px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1120px) {
+
+    .latest-stories-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .LatestStoriesComponent {
+        width: 100%;
+    }
+
+    .latest-stories-details {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .latest-stories-heading {
+        font-size: 28px;
+    }
+
+    .latest-stories-title {
+        font-size: 20px;
+    }
+
+    .LatestStoriesComponent p, .latest-stories-details {
+        font-size: 16px;
+    }
 }
