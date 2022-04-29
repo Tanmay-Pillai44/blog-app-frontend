@@ -16,12 +16,12 @@ const Sidebar = ({ isOpen, toggle }) => {
             <div className={'sidebar-container ' + toggleClass}>
                 <div className='sidebar-wrapper'>
                     <ul className='sidebar-menu'>
-                        <NavLink to="/home" onClick={clickHandler} >Home</NavLink>
-                        <NavLink to="/cat/Bollywood" onClick={clickHandler} >Bollywood</NavLink>
-                        <NavLink to="/cat/Technology" onClick={clickHandler} >Technology</NavLink>
-                        <NavLink to="/cat/Hollywood" onClick={clickHandler} >Hollywood</NavLink>
-                        <NavLink to="/cat/Travel" onClick={clickHandler} >Travel</NavLink>
-                        <NavLink to="/cat/Food" onClick={clickHandler} >Food</NavLink>
+                        <li><NavLink to="/home" onClick={clickHandler} >Home</NavLink></li>
+                        <li><NavLink to="/cat/Bollywood" onClick={clickHandler} >Bollywood</NavLink></li>
+                        <li><NavLink to="/cat/Technology" onClick={clickHandler} >Technology</NavLink></li>
+                        <li><NavLink to="/cat/Hollywood" onClick={clickHandler} >Hollywood</NavLink></li>
+                        <li><NavLink to="/cat/Travel" onClick={clickHandler} >Travel</NavLink></li>
+                        <li><NavLink to="/cat/Food" onClick={clickHandler} >Food</NavLink></li>
                     </ul>
                 </div>
             </div>

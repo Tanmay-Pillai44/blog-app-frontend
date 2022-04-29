@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:display=swap');
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
 
 .LatestArticles {
     width: 80%;
@@ -12,6 +12,26 @@
     padding-bottom: 10px;
     border-bottom: 4px solid #F08080;
     width: fit-content;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
 
 .latest-articles-box {
@@ -36,6 +56,19 @@
     box-shadow: 0px 5px 10px #0000000D;
     border-radius: 4px;
     height: fit-content;
+    transition: .5s ease;
+}
+
+.LatestArticlesComponent img:hover {
+    box-shadow:
+        1px 1px #373737,
+        2px 2px #373737,
+        3px 3px #373737,
+        4px 4px #373737,
+        5px 5px #373737,
+        6px 6px #373737;
+    transform: translateX(-3px);
+    transition: .5s ease;
 }
 
 .LatestArticlesComponent a {
@@ -54,6 +87,25 @@
     margin-left: 34px;
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(
+    to right,
+        darkcyan,
+        darkcyan 50%,
+        #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.latest-article-title:hover {
+    background-position: 0;
+}
+
+.latest-article-title:hover::before {
+    width: 100%;
 }
 
 .LatestArticlesComponent p {
@@ -97,11 +149,32 @@
     width: 380px;
     height: 800px;
     border: 1px solid #707070;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
     margin-top: 48px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: 'Codystar';
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        color: #fff;
+        text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+    }
+
+    to {
+        color: gray;
+        text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+    }
 }
 
 .top-post-heading {
@@ -112,6 +185,26 @@
     border-bottom: 4px solid #F08080;
     width: fit-content;
     margin: 32px 0px;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
 
 .top-post-flexbox {
@@ -126,6 +219,19 @@
     margin-bottom: 20px;
     box-shadow: 0px 5px 10px #0000000D;
     border-radius: 4px;
+    transition: .5s ease;
+}
+
+.top-post-flexbox img:hover {
+    box-shadow:
+        1px 1px #373737,
+        2px 2px #373737,
+        3px 3px #373737,
+        4px 4px #373737,
+        5px 5px #373737,
+        6px 6px #373737;
+    transform: translateX(-3px);
+    transition: .5s ease;
 }
 
 .top-post-flexbox a {
@@ -136,6 +242,25 @@
     font-size: 22px;
     color: black;
     font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(
+    to right,
+        darkcyan,
+        darkcyan 50%,
+        #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.top-post-title:hover {
+    background-position: 0;
+}
+
+.top-post-title:hover::before {
+    width: 100%;
 }
 
 .top-post-details {
@@ -182,6 +307,25 @@
 .top-post-comp-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
+    background-image: linear-gradient(
+    to right,
+        darkcyan,
+        darkcyan 50%,
+        #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.top-post-comp-title:hover {
+    background-position: 0;
+}
+
+.top-post-comp-title:hover::before {
+    width: 100%;
 }
 
 .top-post-comp-details {
@@ -210,6 +354,12 @@
     box-shadow: 0px 5px 10px #0000000D;
     width: 100%;
     height: fit-content;
+    filter: brightness(70%);
+    transition: all 1s ease;
+}
+
+.carousel-item img:hover {
+    filter: brightness(100%);
 }
 
 @media screen and (max-width: 1280px) {

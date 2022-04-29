@@ -21,8 +21,14 @@ const Header = () => {
         <div className='Header'>
             <div className='header-box'>
                 <div className='title'>
-                    <div className='the'>The</div>
-                    <div className='siren'>Siren</div>
+                    <div className='the'><span>The</span></div>
+                    <div className='siren'>
+                        <span className='rubber-letter'>S</span>
+                        <span className='rubber-letter'>i</span>
+                        <span className='rubber-letter'>r</span>
+                        <span className='rubber-letter'>e</span>
+                        <span className='rubber-letter'>n</span>
+                    </div>
                 </div>
                 {
                     isOpen ? (

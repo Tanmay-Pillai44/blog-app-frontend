@@ -12,6 +12,26 @@
     padding-bottom: 10px;
     border-bottom: 4px solid #F08080;
     width: fit-content;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
 
 .latest-flex-container {
@@ -31,6 +51,19 @@
     width: 100%;
     border-radius: 8px 8px 0px 0px;
     box-shadow: 0px 5px 10px #0000000D;
+    transition: .5s ease;
+}
+
+.LatestComponent img:hover {
+    box-shadow:
+        1px 1px #373737,
+        2px 2px #373737,
+        3px 3px #373737,
+        4px 4px #373737,
+        5px 5px #373737,
+        6px 6px #373737;
+    transform: translateX(-3px);
+    transition: .5s ease;
 }
 
 .LatestComponent a {
@@ -42,6 +75,15 @@
     color: #404040;
     font-family: 'Montserrat', sans-serif;
     margin: 20px 10px 10px;
+    position: relative;
+    background: linear-gradient(0deg, darkcyan, darkcyan) no-repeat right bottom / 0 2px;
+    transition: background-size 350ms;
+    padding-bottom: 2px;
+}
+
+.latest-post-title:where(:hover, :focus-visible) {
+    background-size: 100% 2px;
+    background-position-x: left;
 }
 
 .LatestComponent p {

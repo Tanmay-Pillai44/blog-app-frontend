@@ -75,13 +75,19 @@
     margin: 48px 0;
     font-weight: normal;
     text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
 }
 
 .post-page-para::first-letter {
-    font-weight: 600;
+    font-weight: bold;
     color: darkcyan;
-    font-size: 48px;
-    opacity: 0.6;
+    font-size: 70px;
+    float: left;
+    line-height: 60px;
+    padding-right: 8px;
+    margin-top: -3px;
 }
 
 .post-page-tags-box {
@@ -140,11 +146,43 @@
     box-shadow: 0px 5px 10px #0000000D;
     border-radius: 7px 7px 0px 0px;
     margin: 20px 0;
+    transition: .5s ease;
+}
+
+.related-read-img:hover {
+    box-shadow:
+        1px 1px #373737,
+        2px 2px #373737,
+        3px 3px #373737,
+        4px 4px #373737,
+        5px 5px #373737,
+        6px 6px #373737;
+    transform: translateX(-3px);
+    transition: .5s ease;
 }
 
 .related-read-title {
     color: #404040;
     font-size: 22px;
+    background-image: linear-gradient(
+    to right,
+        darkcyan,
+        darkcyan 50%,
+        #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.related-read-title:hover {
+    background-position: 0;
+}
+
+.related-read-title:hover::before {
+    width: 100%;
 }
 
 .show-author-name {
@@ -177,6 +215,8 @@
         width: 30%;
         height: fit-content;
     }
+
+
 
     .related-read-title {
         font-weight: 600;
@@ -239,7 +279,8 @@
     }
 
     .post-page-para::first-letter {
-        font-size: 32px;
+        font-size: 60px;
+        margin-top: -9px;
     }
 
     .author-name {
