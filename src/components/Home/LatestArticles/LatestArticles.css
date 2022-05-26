@@ -28,6 +28,10 @@
     animation: textclip 3s linear infinite;
 }
 
+.latest-articles-heading::first-letter {
+    text-transform: capitalize;
+}
+
 @keyframes textclip {
     to {
         background-position: 200% center;

@@ -7,7 +7,7 @@ const LatestArticlesComponent = ({ data }) => {
             <img src={data.img} alt="latest-article" />
             <div className='latest-article-flexbox'>
                 <div>
-                    <Link to={`/${data.category}/${data.id}`}>
+                    <Link to={`/category/${data.category}/${data.id}`}>
                         <div className='latest-article-title'>
                             {data.title.substring(0, 60)+ "..."}
                         </div>

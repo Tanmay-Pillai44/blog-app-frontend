@@ -12,7 +12,7 @@ const RelatedReadComponent = ({ data }) => {
         <div className='RelatedReadComponent' key={data.id}>
             <div className='related-reads-text'>Related reads</div>
             <img src={data.img} alt="related-read-img" className='related-read-img' />
-            <Link onClick={handleClick} to={`/${data.category}/${data.id}`}>
+            <Link onClick={handleClick} to={`/category/${data.category}/${data.id}`}>
                 <div className='related-read-title'>
                     {data.title.substring(0, 60)+"..."}
                     <p className='show-author-name'>{data.author}</p>

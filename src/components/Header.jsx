@@ -11,7 +11,7 @@ const Header = () => {
         setIsOpen(!isOpen);
     }
 
-    if (typeof window != 'undefined' && window.document && isOpen) {
+    if (isOpen) {
         document.body.style.overflow = 'hidden';
     } else {
         document.body.style.overflow = 'visible';

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const LatestStoriesComponent = ({ data }) => {
     return (
         <div className='LatestStoriesComponent' key={data.id} >
-            <Link to={`/${data.category}/${data.id}`}>
+            <Link to={`/category/${data.category}/${data.id}`}>
                 <div className='latest-stories-title'>{data.title.substring(0, 40) + "..."}</div>
             </Link>
             <p>{data.description}</p>

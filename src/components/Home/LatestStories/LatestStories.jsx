@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import BlogData from './../../BlogData';
+// import BlogData from './../../BlogData';
 import LatestStoriesComponent from './LatestStoriesComponent';
 import './LatestStories.css';
 
-const LatestStories = () => {
+const LatestStories = ({ blogData }) => {
 
     const [postNumber, setPostNumber] =useState(19)
 
@@ -13,7 +13,7 @@ const LatestStories = () => {
                 <div className='latest-stories-heading'>Latest Stories</div>
                 <div className='latest-stories-flex'>
                     {
-                        BlogData.slice(16, postNumber).map((data, index) => (
+                        blogData.slice(16, postNumber).map((data, index) => (
                             <LatestStoriesComponent data={data} key={index}/>
                         ))
                     }

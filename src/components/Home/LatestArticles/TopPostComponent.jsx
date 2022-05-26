@@ -6,7 +6,7 @@ const TopPostComponent = ({data}) => {
         <div key={data.id} className='TopPostComponent'>
             <img src={data.img} alt="top-post" />
             <div className='top-post-comp-box'>
-                <Link to={`/${data.category}/${data.id}`}>
+                <Link to={`/category/${data.category}/${data.id}`}>
                     <div className='top-post-comp-title'>
                         {data.title.substring(0, 42)+"..."}
                     </div>

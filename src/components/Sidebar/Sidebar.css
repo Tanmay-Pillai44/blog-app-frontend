@@ -14,12 +14,12 @@
 }
 
 .show {
-    opacity: 100%;
+    display: block;
     top: 70px;
 }
 
 .hide {
-    opacity: 0;
+    display: none;
     top: -100%;
 }
 
