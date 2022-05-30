@@ -68,7 +68,7 @@ const PostPage = () => {
                                     <div className='more-from-siren'>More From The Siren</div>
                                     <div className='related-read-flexbox'>
                                         {
-                                            blogAuth.slice(1, 4).map((data, index) => (
+                                            blogAuth.map((data, index) => (
                                                 <RelatedReadComponent data={data} key={index}/>
                                             ))
                                         }
